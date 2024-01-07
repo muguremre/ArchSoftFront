@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Archsoft Web Sitesi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="archsoft.png" width="150" height="150" class="d-inline-block align-top" alt="">
+                <p> Archsoft</p>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item" id="loginItem" style="display:none;">
+                        <script>
+                            function redirectToLogin() {
+                                window.location.href = "login.html";
+                            }
+                        </script>
+
+                        <a class="btn btn-outline-primary" href="#" onclick="redirectToLogin()">Log In</a>
+
+                    </li>
+                    <li class="nav-item" id="signupItem" style="display:none;">
+                        <script>
+                            function redirectToSignup() {
+                                window.location.href = "signup.html";
+                            }
+                        </script>
+
+                        <a class="btn btn-primary" href="#" onclick="redirectToSignup()">Sign Up</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="teamwork.jpg" class="img-fluid" alt="Takım çalışması">
+            </div>
+            <div class="col-md-6">
+                <p class="lead">Takım çalışması ile projelerinizi daha kolay ve verimli bir şekilde yönetin.</p>
+                <p class="text-muted">Archsoft, takım çalışması için geliştirilmiş bir web uygulamasıdır. Archsoft ile
+                    takım üyelerinizle kolayca iletişim kurabilir, görevleri paylaşabilir, takvimleri senkronize
+                    edebilir ve projelerinizi başarıyla tamamlayabilirsiniz. Takım üyelerinizin uygun olduğu zamanları
+                    belirleyerek toplantılar planlayabilir, anketler oluşturabilir ve sonuçları görebilirsiniz ayrıca
+                    takım çalışmasını daha eğlenceli ve etkili hale getirir.</p>
+                <a class="btn btn-primary" href="#" onclick="showLoginSignup()">Şimdi Deneyin</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLoginSignup() {
+            document.getElementById("loginItem").style.display = "block";
+            document.getElementById("signupItem").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
